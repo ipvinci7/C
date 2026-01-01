@@ -54,13 +54,13 @@ double mul(double x,double y)
 {
     return x*y;
 }
-double div(int x, int y)
+double div(double x, double y)
 {
     double rem;
     double di;
     double result;
     di = x/y;
-    rem = x % y;
+    rem = (int)x % (int)y;
     return di + rem;
 }
         
