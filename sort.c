@@ -18,3 +18,17 @@ int main()
         printf("%d\n",arr[i]);
     }
 }
+
+
+void swap(int arr[])
+{
+    int temp = arr[0];
+    //check an array and 
+    for(int i=0;i<sizeof(arr);i++)
+    {
+          if(temp<arr[i+1])
+          {
+             arr[i] =arr[i+1];
+          }
+    }
+}
