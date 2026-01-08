@@ -1,30 +1,22 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 int main()
 {
-     char word1[10],word2[10],final[20];
-     printf("Enter word 1\n");
-     gets(word1);
-     printf("Enter word 2\n");
-     gets(word2);
-     int i = 0;
-     int len = 0;
-     while(word1[i]!='\0')
-     {
-         final[i] = word1[i];
+    char Dest_Str[100],Source_str[50];
+    int i=0,j=0;
+    printf("\n Enter the source string : ");
+    gets(Source_str);
+    printf("\n Enter the destination string :");
+    gets(Dest_Str);
+    while(Dest_Str[i]!='\0');
          i++;
-     }
-     len = i;
-     printf("This is final before word 2 is added \n");
-     puts(final);
-     while (word2[i]!='\0')
-     {
-        final[len] =word2[i];
-        len++;
-     }
-     final[len] ='\0';
-     printf("The word is :\n");
-     puts(final);
-     
+    while(Source_str[j]!='\0')
+    {
+        Dest_Str[i] = Source_str[j];
+        i++;
+        j++;
+    }
+    Dest_Str[i] = '\0';
+    printf("\n After appending, the destination string is : ");
+    puts(Dest_Str);
+    return 0;
 }
